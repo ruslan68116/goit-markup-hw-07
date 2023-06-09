@@ -44,7 +44,7 @@
               <a class="link nav-name" href="">Contacts</a>
             </li>
           </ul>
-          <button type="button" class="mobile-menu-open-btn">
+          <button type="button" class="mobile-menu-open-btn" js-open-menu>
             <svg class="mobile-menu-open-btn-icon" width="32" height="22">
               <use href="./images/icons.svg#icon-burger"></use>
             </svg>
@@ -66,6 +66,55 @@
             </li>
           </ul>
         </address>
+      </div>
+      <!-- mobile nav menu -->
+      <div class="mobile-menu s-hidden" js-menu-container>
+        <div class="container menu-container">
+          <button type="button" class="mobile-menu-close-icon" js-close-menu>
+            <svg class="mobile-icon-close" width="24" height="24">
+              <use
+                class="mobile-icon-use"
+                href="./images/icons.svg#icon-close"
+              ></use>
+            </svg>
+          </button>
+
+          <div class="navigation-menu-mobile">
+            <ul class="nav-header-mobile list">
+              <li>
+                <a class="link nav-name-mobile" href="./index.html">Studio</a>
+              </li>
+
+              <li>
+                <a class="link nav-name-mobile" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+
+              <li>
+                <a class="link nav-name-mobile" href="">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="contacts-menu-mobile">
+            <address class="adr-menu-mobile">
+              <ul class="adr-list-menu-mobile list">
+                <li>
+                  <a class="link header-mobile-tel" href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link header-mobile-mail"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -734,6 +783,7 @@
         </form>
       </div>
     </div>
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile.js"></script>
   </body>
 </html>
