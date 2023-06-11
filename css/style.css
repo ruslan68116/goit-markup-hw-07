@@ -1031,25 +1031,48 @@ padding-bottom: 16px;
  .footer-div{
 display: flex;
 flex-wrap: wrap;
+justify-content: center;
+column-gap: 24px;
+  row-gap: 72px;
+
  }
 .footer-div-logo {
 display: inline;
+
 }
 .footer-social-section {
+max-width: 208px;
+padding-left: 0;
+padding-right: 0;
+margin: 0;
 
 }
+
+.footer-social-ul {
+max-width: 208px;
+}
+
 .footer-form-div {
-
+margin-right: 44px;
 }
+
+.footer-form-label {
+  display: flex;
+}
+
 .footer-form {
   display: flex;
+  gap: 24px;
 }
 .footer-form-input {
   width: 264px;
  
 }
 .footer-form-btn {
-  display: inline;
+  display: flex;
+}
+.marketing-footer {
+  padding-bottom: 0;
 }
 }
 
