@@ -840,17 +840,47 @@ width: 168px;
   display: flex;
 }
 
-.footer-div {
+@media screen and (max-width: 767px) {
+  .footer-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-div-logo {
+  display: contents;
+  
+}
+.footer-social-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 72px;
+}
+.footer-form-div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.footer-div-logo {
-  display: contents;
-  
+.footer-form {
+display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
 }
+
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
+
+}
+
+
 
 .logo-in-footer {
   font-family: var(--secondary-font-family);
@@ -896,13 +926,7 @@ letter-spacing: 0.02em;
 color: #F4F4FD;
 }
 
-.footer-social-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 72px;
-}
+
 
 .footer-social-p {
   font-family: var(--main-font-family);
@@ -958,20 +982,6 @@ padding-bottom: 16px;
   color: #ffffff;
 }
 
-.footer-form-div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-form {
-display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-}
 
 .footer-form-input {
   width: 398px;
@@ -1012,25 +1022,62 @@ display: flex;
   gap: 16px;
 }
 
-@media  and (min-width:768px) and (max-width:1157px) {
+.footer-form-svg {
+  margin-left: 16px;
+}
+
+@media screen and (min-width:768px) and (max-width:1157px) {
   
-  .footer-div {
+ .footer-div{
+display: flex;
+flex-wrap: wrap;
+ }
+.footer-div-logo {
+display: inline;
+}
+.footer-social-section {
+
+}
+.footer-form-div {
+
+}
+.footer-form {
+  display: flex;
+}
+.footer-form-input {
+  width: 264px;
  
-  display: unset;
-  flex-direction: unset;
-  justify-content: unset;
-  align-items: unset;
-
-
+}
+.footer-form-btn {
+  display: inline;
+}
 }
 
    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/* footer desctop */
+
+@media screen and (min-width:1158px) {
+
+  .footer-conteiner {
+    max-width: 1440px;
+  }
+  .footer-div {
+  display: flex;
+  align-items: baseline;
+}
+.footer-div-logo {
+  margin-right: 120px;
+}
+.footer-form {
+  display: flex;
+  gap: 24px;
 }
 
+.footer-form-input {
+  width: 264px;
+  
+}
+}
 
 /* backdrop */
 
