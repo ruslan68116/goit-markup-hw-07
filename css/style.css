@@ -204,6 +204,16 @@ gap: 12px;
   .adr-list {
 flex-direction: inherit;
   }
+
+  .header-nav-adr {
+    
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+  
+    transition: color var(--overlay-on-page);
+  }
   
 }
 
@@ -463,7 +473,7 @@ flex-direction: inherit;
   }
 }
 /* for desctop img */
-@media screen and { (min-width: 1200px) ;
+@media screen and { (min-width: 1158px) ;
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -480,7 +490,7 @@ flex-direction: inherit;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
-      ), url(../images/bg/people-office\ 1@2x.jpg);
+      ), url(../images/bg/people-office1@2x.jpg);
   }
 }
 
@@ -557,7 +567,7 @@ align-items: center;
 
 .feature {
 padding-top: 96px;
-padding-bottom: 96px;
+
 }
 
 .feature-container {
@@ -603,7 +613,8 @@ color: #434455;
   .feature-list-svg {
     display: none;
   }
-
+  
+  
 }
 
 
@@ -666,6 +677,11 @@ flex-direction: row;
     gap: 24px;
 }
 
+.feature-description {
+  font-weight: 400;
+  line-height: 1.5;
+}
+
 }
 
 
@@ -679,7 +695,7 @@ flex-direction: row;
 /* team */
 .team {
   background: #f4f4fd;
-  padding: 96px 0;
+  padding: 96px 0 0;
 }
 
 .team-title {
@@ -791,7 +807,7 @@ column-gap: 24px;
 /* section company */
 
 .company {
-  padding: 96px 0;
+  padding: 96px 0 96px 0;
 }
 
 .client-section {
@@ -860,11 +876,16 @@ width: 168px;
   }
 }
 
+@media screen and (min-width: 768px) {
+  .client-item-link {
+    width: 168px;}
+}
 
 /* footer */
 
 .footer-conteiner {
   display: flex;
+  
 }
 
 @media screen and (max-width: 767px) {
@@ -1108,9 +1129,7 @@ margin-right: 44px;
 
 @media screen and (min-width:1158px) {
 
-  .footer-conteiner {
-    max-width: 1440px;
-  }
+ 
   .footer-div {
   display: flex;
   align-items: baseline;
@@ -1391,4 +1410,52 @@ overflow: scroll;
 
 .form-a {
   color: #4d5ae5;
+}
+
+/* for desctop */
+
+@media screen and (min-width: 1200px) {
+  .presentation {
+    display: block;
+    padding-bottom: 120px;
+  }
+  
+  .presentation-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2e2f42;
+    margin-bottom: 72px;
+  }
+  
+  .presentation-list {
+    display: flex;
+  
+    gap: 24px;
+  }
+  
+  .presentation-list-item {
+    width: calc((100% - 48px) / 3);
+  }
+  .team {
+padding: 0;
+}
+
+  .team-list {
+    
+    flex-direction: inherit;
+    gap: 24px;
+  }
+
+  .client-list {
+    flex-wrap: inherit;
+    gap: 24px;
+  }
+
+  .company {
+    padding: 120px 0;
+  }
 }
