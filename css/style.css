@@ -276,6 +276,12 @@ flex-direction: inherit;
 
 .menu-container {
   position: relative;
+  height: 100%;
+  padding: 80px 0 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+
 }
 
 .mobile-menu-close-icon {
@@ -306,9 +312,6 @@ flex-direction: inherit;
 .mobile-icon-use {
 }
 
-.menu-container {
-  height: 796px;
-}
 
 /* mobile navigation */
 
@@ -323,7 +326,7 @@ flex-direction: inherit;
 .nav-header-mobile {
   display: grid;
   gap: 40px;
-  padding-bottom: 284px;
+  
 }
 
 .nav-name-mobile {
@@ -347,6 +350,10 @@ flex-direction: inherit;
 .contacts-menu-mobile {
   
   padding-left: 24px;
+  
+}
+
+.adr-menu-mobile {
   padding-bottom: 48px;
 }
 
@@ -491,6 +498,16 @@ flex-direction: inherit;
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ), url(../images/bg/people-office1@2x.jpg);
+  }
+}
+
+@media screen and (min-width:1158px) {
+  .hero {
+    width: 100%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 188px 0;
   }
 }
 
@@ -723,7 +740,7 @@ gap: 72px;
 .team-member-container {
   background: #ffffff;
   border-radius: 0px 0px 4px 4px;
-  flex-basis: calc((100% -72px) / 4);
+  flex-basis: calc((100% - 72px) / 4);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -962,6 +979,17 @@ display: flex;
   padding: 96px 0;
 }
 
+@media screen and (min-width: 1158px) {
+  .footer-conteiner {
+    padding: 100px 0;
+  }
+
+  .marketing-footer {
+    padding-bottom: 0;
+  }
+  
+}
+
 /* footer social */
 
 .footer-social-p {
@@ -1032,19 +1060,19 @@ padding-bottom: 16px;
 
 
 .footer-form-input {
-  width: 398px;
-  height: 40px;
-  border: 1px solid #ffffff;
-  font-family: var(--main-font-family);
-  font-size: 12px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  padding-left: 16px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  color: #ffffff;
-  background: #2e2f42;
-  background-color: transparent;
+ font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    width: 100%;
+    height: 40px;
+    padding: 8px 16px;
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
 }
 
 .footer-form-input::placeholder {
